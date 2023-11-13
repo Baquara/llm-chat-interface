@@ -1,0 +1,81 @@
+.sidebar {
+  position: relative;
+
+
+}
+
+.sidebar .toggle-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  background-color: white;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.sidebar-content {
+  width: 100%;
+}
+
+.sidebar button {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.sidebar input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.resizer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 8px;
+  height: 100%;
+  cursor: ew-resize;
+  z-index: 1;
+}
+
+
+.chat-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  max-height: 80%; /* adjust as needed */
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #313131;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.chat-item:hover {
+  background-color: #e0e0e0;
+}
+
+.chat-icon {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  margin-right: 10px;
+}
+
+.chat-text {
+  flex-grow: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

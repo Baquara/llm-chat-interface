@@ -1,0 +1,36 @@
+/* Chat Component Styling */
+.chat-component {
+  position: absolute;
+  top: 30px; /* This ensures it's at the topmost position within its relative container */
+  max-width: 100%; /* Adjust this value according to your preference */
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: none;
+  max-height: 80%; /* Adjust this value according to your preference */
+  overflow-y: auto;  /* Enables vertical scrolling when content overflows */
+  z-index: 10;       /* Ensure it's above other elements if necessary */
+}
+
+.message {
+  margin-bottom: 15px; /* Increased spacing between messages */
+  padding: 12px 20px;  /* Increased padding for better spacing */
+  border-radius: 15px; /* Rounder corners for a modern look */
+  font-size: 1rem;     /* Set a specific font-size for better control */
+  line-height: 1.5;    /* Improve readability */
+  white-space: pre-line;  /* This will preserve newlines and spaces */
+}
+
+.message.user {
+  background-color: #243447; /* Deep Blue for user message */
+  color: #EAEAEA;            /* Light text color for contrast */
+  text-align: left;
+  border: 1px solid #2B3E57; /* Slightly lighter shade of blue for border */
+}
+
+.message.bot {
+  background-color: #444654;
+  color: white;
+  text-align: left;          /* Keep the text alignment consistent with user messages */
+  border: 1px solid #B0B0B0; /* Slightly darker shade of grey for border */
+}

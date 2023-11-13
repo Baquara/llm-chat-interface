@@ -1,0 +1,120 @@
+#customModelSelector {
+  position: absolute;
+  top: 0; /* This ensures it's at the topmost position within its relative container */
+  width: 10%;
+  text-align: center;
+}
+
+.model-selector {
+  display: inline-block;
+  width: 40%; /* A more compact width */
+  border: 1px solid #444; /* Slight border for definition */
+  border-radius: 6px;
+  background-color: #333; /* Dark background to fit the theme */
+}
+
+.model-selector select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  font-size: 1em;
+  color: #B0B0B0; /* Muted color for the text */
+  cursor: pointer;
+  outline: none;
+}
+
+.model-selector:hover {
+  border-color: #555; /* Slightly different shade for hover */
+}
+
+.model-selector select:hover,
+.model-selector select:focus {
+  color: #fff; /* Brighter text on hover/focus for better readability */
+}
+
+/* Arrow indicator for the dropdown */
+.model-selector:after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #B0B0B0;
+  pointer-events: none;
+}
+
+
+.chat-area {
+  position: relative; /* Makes sure absolute positioning of children is relative to this container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px; /* Creates space at the top for #customModelSelector. Adjust if needed */
+}
+
+
+.chat-area textarea {
+  padding: 10px;
+  flex: 1;
+  margin: 0 10px;
+  border-radius: 16px; /* Adds rounded corners */
+  border: 1px solid #B0B0B0; /* Gives it a subtle border */
+  background-color: #f7f7f7; /* Lighter background color similar to ChatGPT */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition effect for focus */
+}
+
+.chat-area textarea:focus {
+  border-color: #3a3a3a; /* Darker border color on focus */
+  box-shadow: 0 0 5px rgba(58, 58, 58, 0.2); /* Adds a subtle shadow on focus */
+}
+
+/* This ensures that the placeholder color is more subtle */
+.chat-area textarea::placeholder {
+  color: #B0B0B0;
+}
+
+.model-selector, .chat-logs {
+  width: 100%;
+}
+
+.chat-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row; /* Ensures items are side by side */
+  width: 100%;
+}
+
+.file-upload-button {
+  background-color: #B0B0B0; /* Muted background color */
+  border: none;
+  padding: 10px;
+  color: white; /* Paperclip icon color */
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+}
+
+.send-button {
+  background-color: #274D36; /* Forest Green background color */
+  border: none;
+  color: white; /* Paper airplane icon color */
+  padding: 10px;
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+}
+
+.file-upload-button:hover {
+  background-color: #9E9E9E; /* Slightly darker shade on hover */
+}
+
+.send-button:hover {
+  background-color: #2E5E41; /* Slightly darker shade of forest green on hover */
+}
+
+
+
+

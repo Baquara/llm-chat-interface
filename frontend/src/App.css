@@ -1,0 +1,49 @@
+.app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;  /* Prevents any child elements from causing a scrollbar */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.sidebar, .chat-area {
+  margin: 0;
+  border: none;
+}
+
+.sidebar {
+  width: 30%;
+  height: 100%;
+  background-color: #2c2c2c;
+  color: white;
+  padding: 20px;
+}
+
+.chat-area {
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;  /* Aligns children elements to the end (bottom) */
+}
+
+.model-selector {
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.chat-logs {
+  overflow-y: auto;   /* allows the chat to scroll when it gets too long */
+  flex-grow: 1;       /* allows this div to take up available space */
+  margin-bottom: 10px;
+}
+
+.chat-inputs {
+  display: flex;
+  flex-direction: column;
+}
