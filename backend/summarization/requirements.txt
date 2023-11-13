@@ -1,0 +1,7 @@
+git+https://github.com/m-bain/whisperx.git
+torch
+transformers
+requests
+librosa
+soundfile
+numpy
