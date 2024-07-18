@@ -10,9 +10,6 @@ from diffusers import StableDiffusionPipeline
 from PIL import Image
 import base64
 
-
-#pipe = StableDiffusionPipeline.from_single_file("/run/media/privateserver/NECTAC1TBSSD/a1111/stable-diffusion-webui/models/Stable-diffusion/sd15.safetensors", torch_dtype=torch.float16).to("cuda")
-
 def stable_diffusion(prompt):
     # Generate an image using a prompt
     pipe.safety_checker = None
